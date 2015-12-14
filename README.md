@@ -3,12 +3,12 @@ The Kiosk service (visitor sign in and sign out service for Tutora)
 
 ### Dependencies
 - Python (v3.4+)
-- Flask (bleeding)
+- Flask (latest stable)
 - pytest (latest stable)
 
 ### Run the app
 ```
-flask --app=kiosk run
+python kiosk.py
 ```
 
 ### Run the tests
