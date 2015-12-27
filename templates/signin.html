@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>ARC - Sign In</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static/bootstrap.min.css" rel="stylesheet" media="screen">
+</head>
+<body>
+<div class="container">
+    <h1>Please Sign In</h1>
+    <br>
+    <form action="" method="post">
+        <input type="number" placeholder="A#" name="anumber" value="{{
+                request.form.anumber }}">
+        <input class="btn btn-default" type="submit" value="Login">
+    </form>
+    {% if error %}
+        <p class="error"><strong>Error:</strong> {{ error }}
+    {% endif %}
+
+    {% if success %}
+        <p class="error"><strong>Success:</strong> {{ success }}
+    {% endif %}
+
+</div>
+</body>
+</html>
+
